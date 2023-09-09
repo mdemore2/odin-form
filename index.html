@@ -10,20 +10,49 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <div class="sidebar"></div>
-    <div class="main">
-        <div class="header">
-            <span>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</span>
-            <span>You <em>know</em> you want to.</span>
-        </div>
-        <form action="push">
-
-        </form>
-        <div class="footer">
-            <button type="submit">Create Account</button>
-            <span> Already have an account? <a>Log in</a></span>
+    <div class="sidebar">
+        <div class="banner">
+            &#127830 GABAGOOL
         </div>
     </div>
-    
+    <div class="main">
+        <div class="header">
+            <span>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</span>
+            <span>You <em>know</em> you want to.</span>
+        </div>
+        <div class="form">
+            <form action="push">
+                <span class=form_content><h3>Let's do this!</h3></span>
+                <div class="form_content">
+                    <div class="form_col">
+                        <label>First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                        
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                        
+                        <label>Password</label>
+                        <input class="error" type="text" name="password" id="password">
+                        
+                    </div>
+                    <div class="form_col">
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                        
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                        
+                        <label>Confirm Password</label>
+                        <input class="error" type="text" name="conf_pass" id="conf_pass">
+                        
+                    </div>
+                </div>  
+            </form>
+        </div>
+        <div class="footer">
+            <button type="submit">Create Account</button>
+            <span> Already have an account? <a href="https://google.com/">Log in</a></span>
+        </div>
+    </div>
 </body>
 </html>
