@@ -12,7 +12,7 @@
 <body>
     <div class="sidebar">
         <div class="banner">
-            &#127830 GABAGOOL
+            <img src="assets/1f356.svg" height="80px"> GABAGOOL
         </div>
     </div>
     <div class="main">
@@ -21,18 +21,18 @@
             <span>You <em>know</em> you want to.</span>
         </div>
         <div class="form">
-            <form action="push">
+            <form action="push" id="sign-up">
                 <span class=form_content><h3>Let's do this!</h3></span>
                 <div class="form_content">
                     <div class="form_col">
                         <label>First Name</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <input required type="text" name="first_name" id="first_name">
                         
                         <label>Email</label>
-                        <input type="email" name="email" id="email">
+                        <input required type="email" name="email" id="email">
                         
                         <label>Password</label>
-                        <input class="error" type="text" name="password" id="password">
+                        <input required class="error" type="text" name="password" id="password">
                         
                     </div>
                     <div class="form_col">
@@ -43,14 +43,14 @@
                         <input type="tel" name="phone" id="phone">
                         
                         <label>Confirm Password</label>
-                        <input class="error" type="text" name="conf_pass" id="conf_pass">
+                        <input required class="error" type="text" name="conf_pass" id="conf_pass">
                         
                     </div>
                 </div>  
             </form>
         </div>
         <div class="footer">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="sign-up">Create Account</button>
             <span> Already have an account? <a href="https://google.com/">Log in</a></span>
         </div>
     </div>
