@@ -8,6 +8,7 @@
       </style>
     <link rel="stylesheet" href="style.css">
     <title>Sign-Up Form</title>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="sidebar">
@@ -25,32 +26,32 @@
                 <span class=form_content><h3>Let's do this!</h3></span>
                 <div class="form_content">
                     <div class="form_col">
-                        <label>First Name</label>
+                        <label for="first_name">First Name</label>
                         <input required type="text" name="first_name" id="first_name">
                         
-                        <label>Email</label>
+                        <label for="email">Email</label>
                         <input required type="email" name="email" id="email">
                         
-                        <label>Password</label>
-                        <input required class="error" type="text" name="password" id="password">
+                        <label for="password">Password</label>
+                        <input required type="password" name="password" id="password">
                         
                     </div>
                     <div class="form_col">
-                        <label>Last Name</label>
+                        <label for="last_name">Last Name</label>
                         <input type="text" name="last_name" id="last_name">
                         
-                        <label>Phone Number</label>
+                        <label for="phone">Phone Number</label>
                         <input type="tel" name="phone" id="phone">
                         
-                        <label>Confirm Password</label>
-                        <input required class="error" type="text" name="conf_pass" id="conf_pass">
-                        
+                        <label for="conf_pass">Confirm Password</label>
+                        <input required type="password" name="conf_pass" id="conf_pass">  
                     </div>
-                </div>  
+                </div>
+                <span class="form_content" id="password-warning" style="color: red;"></span> 
             </form>
         </div>
         <div class="footer">
-            <button type="submit" form="sign-up">Create Account</button>
+            <button type="submit" form="sign-up" disabled>Create Account</button>
             <span> Already have an account? <a href="https://google.com/">Log in</a></span>
         </div>
     </div>
